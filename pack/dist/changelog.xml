@@ -1,0 +1,25 @@
+<!-- ?xml version="1.0" encoding="UTF-8"? -->
+<root>
+<slug>wolf-artists</slug>
+<name>Wolf Artists</name>
+<link>https://wolfthemes.com/plugin/wolf-artists/</link>
+<short_link>http://wlfthm.es/pPb2SE</short_link>
+<created>2018-03-30</created>
+<requires>4.4.1</requires>
+<tested>4.9.5</tested>
+<description>A label plugin to sort your artists</description>
+<date>2018-05-07</date>
+<latest>1.0.0</latest>
+<warning><![CDATA[]]></warning>
+<info><![CDATA[]]></info>
+<new><![CDATA[]]></new>
+<changelog>
+<![CDATA[
+<h4 id="7th-may-2018-version-1-0-0">7th May 2018 - Version 1.0.0</h4>
+<ul>
+<li>Initial release</li>
+</ul>
+
+]]>
+</changelog>
+</root>
