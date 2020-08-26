@@ -4,15 +4,13 @@
  *
  * Functions used in the template files to output content - in most cases hooked in via the template actions. All functions are pluggable.
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Templates
+ * @package WolfArtists/Templates
  * @since 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Output generator tag to aid debugging.

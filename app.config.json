@@ -1,0 +1,14 @@
+{
+	"version": "1.0.0",
+	"updated": "2018-06-07",
+	"slug": "wolf-artists",
+	"name": "Wolf Artists",
+	"packagename": "WolfArtists",
+	"created": "2018-06-07",
+	"createdNice": "7th may 2018",
+	"description": "A label plugin to sort your artists.",
+	"link": "https://github.com/wolfthemes/wolf-artists",
+	"shortlink": "http://wlfthm.es/wolf-artists",
+	"author": "WolfThemes",
+	"authorURI": "https://wolfthemes.com"
+}

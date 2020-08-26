@@ -1,0 +1,16 @@
+{
+	"name": "wolfthemes/wolf-artists",
+	"description": "A label plugin to sort your artists.",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/wolfthemes/wolf-artists",
+	"authors": [
+		{
+			"name": "WolfThemes",
+			"email": "contact@wolfthemes.com",
+			"homepage": "https://wolfthemes.com"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	}
+}

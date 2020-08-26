@@ -4,9 +4,9 @@
  *
  * Action/filter hooks used for %PACKAGENAME% functions/templates
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Templates
+ * @package WolfArtists/Templates
  * @since 1.0.0
  */
 

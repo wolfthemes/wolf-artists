@@ -4,9 +4,9 @@
  *
  * Hooked-in functions for %NAME% related events on the front-end.
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Functions
+ * @package WolfArtists/Functions
  * @since 1.0.0
  */
 

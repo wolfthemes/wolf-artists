@@ -4,15 +4,13 @@
  *
  * Functions available on both the front-end and admin.
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Admin
- * @package %PACKAGENAME%/Functions
+ * @package WolfArtists/Functions
  * @since 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Display archive page state

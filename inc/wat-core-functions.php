@@ -4,9 +4,9 @@
  *
  * General core functions available on admin and frontend
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Core
+ * @package WolfArtists/Core
  * @version %VERSION%
  */
 

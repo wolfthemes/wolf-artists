@@ -2,9 +2,9 @@
 /**
  * %NAME% register post type
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Admin
+ * @package WolfArtists/Admin
  * @version %VERSION%
  */
 
@@ -13,19 +13,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $labels = array(
-	'name' => esc_html__( 'Artists', '%TEXTDOMAIN%' ),
-	'singular_name' => esc_html__( 'Artist', '%TEXTDOMAIN%' ),
-	'add_new' => esc_html__( 'Add New', '%TEXTDOMAIN%' ),
-	'add_new_item' => esc_html__( 'Add New Artist', '%TEXTDOMAIN%' ),
-	'all_items'  =>  esc_html__( 'All Artists', '%TEXTDOMAIN%' ),
-	'edit_item' => esc_html__( 'Edit Artist', '%TEXTDOMAIN%' ),
-	'new_item' => esc_html__( 'New Artist', '%TEXTDOMAIN%' ),
-	'view_item' => esc_html__( 'View Artist', '%TEXTDOMAIN%' ),
-	'search_items' => esc_html__( 'Search Artists', '%TEXTDOMAIN%' ),
-	'not_found' => esc_html__( 'No artists found', '%TEXTDOMAIN%' ),
-	'not_found_in_trash' => esc_html__( 'No artists found in Trash', '%TEXTDOMAIN%' ),
+	'name' => esc_html__( 'Artists', 'wolf-artists' ),
+	'singular_name' => esc_html__( 'Artist', 'wolf-artists' ),
+	'add_new' => esc_html__( 'Add New', 'wolf-artists' ),
+	'add_new_item' => esc_html__( 'Add New Artist', 'wolf-artists' ),
+	'all_items'  =>  esc_html__( 'All Artists', 'wolf-artists' ),
+	'edit_item' => esc_html__( 'Edit Artist', 'wolf-artists' ),
+	'new_item' => esc_html__( 'New Artist', 'wolf-artists' ),
+	'view_item' => esc_html__( 'View Artist', 'wolf-artists' ),
+	'search_items' => esc_html__( 'Search Artists', 'wolf-artists' ),
+	'not_found' => esc_html__( 'No artists found', 'wolf-artists' ),
+	'not_found_in_trash' => esc_html__( 'No artists found in Trash', 'wolf-artists' ),
 	'parent_item_colon' => '',
-	'menu_name' => esc_html__( 'Artists', '%TEXTDOMAIN%' ),
+	'menu_name' => esc_html__( 'Artists', 'wolf-artists' ),
 );
 
 $args = array(

@@ -3,15 +3,13 @@
  * %NAME% Options.
  *
  * @class WAT_Options
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Admin
- * @package %PACKAGENAME%/Admin
+ * @package WolfArtists/Admin
  * @version %VERSION%
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * WAT_Options class.
@@ -36,8 +34,8 @@ class WAT_Options {
 	 */
 	public function add_settings_menu() {
 
-		add_submenu_page( 'edit.php?post_type=artist', esc_html__( 'Settings', '%TEXTDOMAIN%' ), esc_html__( 'Settings', '%TEXTDOMAIN%' ), 'edit_plugins', 'wolf-artists-settings', array( $this, 'options_form' ) );
-		add_submenu_page( 'edit.php?post_type=artist', esc_html__( 'Shortcode', '%TEXTDOMAIN%' ), esc_html__( 'Shortcode', '%TEXTDOMAIN%' ), 'edit_plugins', 'wolf-artists-shortcode', array( $this, 'help' ) );
+		add_submenu_page( 'edit.php?post_type=artist', esc_html__( 'Settings', 'wolf-artists' ), esc_html__( 'Settings', 'wolf-artists' ), 'edit_plugins', 'wolf-artists-settings', array( $this, 'options_form' ) );
+		add_submenu_page( 'edit.php?post_type=artist', esc_html__( 'Shortcode', 'wolf-artists' ), esc_html__( 'Shortcode', 'wolf-artists' ), 'edit_plugins', 'wolf-artists-shortcode', array( $this, 'help' ) );
 	}
 
 	/**
@@ -65,9 +63,9 @@ class WAT_Options {
 
 		register_setting( 'wolf-artists-settings', 'wolf_artists_settings', array( $this, 'settings_validate' ) );
 		add_settings_section( 'wolf-artists-settings', '', array( $this, 'section_intro' ), 'wolf-artists-settings' );
-		add_settings_field( 'page_id', esc_html__( 'Artists page', '%TEXTDOMAIN%' ), array( $this, 'setting_page_id' ), 'wolf-artists-settings', 'wolf-artists-settings' );
-		add_settings_field( 'columns', esc_html__( 'Max number of column', '%TEXTDOMAIN%' ), array( $this, 'setting_columns' ), 'wolf-artists-settings', 'wolf-artists-settings', array( 'class' => 'wolf-artists-settings-columns' ) );
-		add_settings_field( 'isotope', esc_html__( 'Use Isotope filter', '%TEXTDOMAIN%' ), array( $this, 'setting_isotope' ), 'wolf-artists-settings', 'wolf-artists-settings', array( 'class' => 'wolf-artists-settings-filter' ) );
+		add_settings_field( 'page_id', esc_html__( 'Artists page', 'wolf-artists' ), array( $this, 'setting_page_id' ), 'wolf-artists-settings', 'wolf-artists-settings' );
+		add_settings_field( 'columns', esc_html__( 'Max number of column', 'wolf-artists' ), array( $this, 'setting_columns' ), 'wolf-artists-settings', 'wolf-artists-settings', array( 'class' => 'wolf-artists-settings-columns' ) );
+		add_settings_field( 'isotope', esc_html__( 'Use Isotope filter', 'wolf-artists' ), array( $this, 'setting_isotope' ), 'wolf-artists-settings', 'wolf-artists-settings', array( 'class' => 'wolf-artists-settings-filter' ) );
 	}
 
 	/**
@@ -104,7 +102,7 @@ class WAT_Options {
 	 */
 	public function setting_page_id() {
 		
-		$page_option = array( '' => esc_html__( '- Disabled -', '%TEXTDOMAIN%' ) );
+		$page_option = array( '' => esc_html__( '- Disabled -', 'wolf-artists' ) );
 		$pages = get_pages();
 
 		foreach ( $pages as $page ) {
@@ -117,7 +115,7 @@ class WAT_Options {
 		}
 		?>
 		<select name="wolf_artists_settings[page_id]">
-			<option value="-1"><?php esc_html_e( 'Select a page...', '%TEXTDOMAIN%' ); ?></option>
+			<option value="-1"><?php esc_html_e( 'Select a page...', 'wolf-artists' ); ?></option>
 			<?php foreach ( $page_option as $k => $v ) : ?>
 				<option value="<?php echo absint( $k ); ?>" <?php selected( absint( $k ), get_option( '_wolf_artists_page_id' ) ); ?>><?php echo sanitize_text_field( $v ); ?></option>
 			<?php endforeach; ?>
@@ -136,7 +134,7 @@ class WAT_Options {
 			<option <?php selected( $column, wolf_get_artist_option( 'col', 4 ) ); ?>><?php echo absint( $column ); ?></option>
 			<?php endforeach; ?>
 		</select>
-		<?php esc_html_e( 'Number of column on desktop screen', '%TEXTDOMAIN%' ); ?>
+		<?php esc_html_e( 'Number of column on desktop screen', 'wolf-artists' ); ?>
 		<?php
 	}
 
@@ -157,10 +155,10 @@ class WAT_Options {
 	public function help() {
 		?>
 		<div class="wrap">
-			<h2><?php esc_html_e( 'artists shortcode', '%TEXTDOMAIN%' ) ?></h2>
-			<p><?php esc_html_e( 'To display your last artists in your post or page you can use the following shortcode.', '%TEXTDOMAIN%' ); ?></p>
+			<h2><?php esc_html_e( 'artists shortcode', 'wolf-artists' ) ?></h2>
+			<p><?php esc_html_e( 'To display your last artists in your post or page you can use the following shortcode.', 'wolf-artists' ); ?></p>
 			<p><code>[wolf_last_artists]</code></p>
-			<p><?php esc_html_e( 'Additionally, you can add a count, columns, tag and category attributes.', '%TEXTDOMAIN%' ); ?></p>
+			<p><?php esc_html_e( 'Additionally, you can add a count, columns, tag and category attributes.', 'wolf-artists' ); ?></p>
 			<p><code>[wolf_last_artists col="2|3|4" count="4" category="my-category" tag="my-tag"]</code></p>
 		</div>
 		<?php
@@ -174,16 +172,16 @@ class WAT_Options {
 		?>
 		<div class="wrap">
 			<div id="icon-options-general" class="icon32"></div>
-			<h2><?php esc_html_e( 'artists options', '%TEXTDOMAIN%' ); ?></h2>
+			<h2><?php esc_html_e( 'artists options', 'wolf-artists' ); ?></h2>
 			<?php if ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] ) { ?>
 			<div id="setting-error-settings_updated" class="updated settings-error">
-				<p><strong><?php esc_html_e( 'Settings saved.', '%TEXTDOMAIN%' ); ?></strong></p>
+				<p><strong><?php esc_html_e( 'Settings saved.', 'wolf-artists' ); ?></strong></p>
 			</div>
 			<?php } ?>
 			<form action="options.php" method="post">
 				<?php settings_fields( 'wolf-artists-settings' ); ?>
 				<?php do_settings_sections( 'wolf-artists-settings' ); ?>
-				<p class="submit"><input name="save" type="submit" class="button-primary" value="<?php _e( 'Save Changes', '%TEXTDOMAIN%' ); ?>" /></p>
+				<p class="submit"><input name="save" type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'wolf-artists' ); ?>" /></p>
 			</form>
 		</div>
 		<?php
