@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Wolf Artists
+ * Plugin Name: Artists
  * Plugin URI: https://wlfthm.es/wolf-artists
- * Description: A label plugin to sort your artists
- * Version: %VERSION%
+ * Description: A label plugin to sort your artists.
+ * Version: 1.0.1
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
  * Requires at least: 5.0
@@ -31,7 +31,7 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 	 * Contains the main functions for Wolf_Artists
 	 *
 	 * @class Wolf_Artists
-	 * @version %VERSION%
+	 * @version 1.0.1
 	 * @since 1.0.0
 	 * @package WolfArtists
 	 * @author WolfThemes
@@ -46,22 +46,19 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '%VERSION%';
+		public $version = '1.0.1';
 
 		/**
-		 * @var %NAME% The single instance of the class
+		 * @var Artists The single instance of the class
 		 */
 		protected static $_instance = null;
 
-		/**
-		 * @var string
-		 */
-		private $update_url = 'https://plugins.wolfthemes.com/update';
+
 
 		/**
 		 * @var the support forum URL
 		 */
-		private $support_url = 'https://docs.wolfthemes.com/';
+		private $support_url = 'https://wlfthm.es/help';
 
 		/**
 		 * @var string
@@ -69,13 +66,13 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 		public $template_url;
 
 		/**
-		 * Main %NAME% Instance
+		 * Main Artists Instance
 		 *
-		 * Ensures only one instance of %NAME% is loaded or can be loaded.
+		 * Ensures only one instance of Artists is loaded or can be loaded.
 		 *
 		 * @static
 		 * @see WOLFARTISTS()
-		 * @return %NAME% - Main instance
+		 * @return Artists - Main instance
 		 */
 		public static function instance() {
 			if ( is_null( self::$_instance ) ) {
@@ -85,7 +82,7 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 		}
 
 		/**
-		 * %NAME% Constructor.
+		 * Artists Constructor.
 		 */
 		public function __construct() {
 
@@ -111,7 +108,7 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 
 				printf(
 					esc_html__( '%1$s needs at least PHP %2$s installed on your server. You have version %3$s currently installed. Please contact your hosting service provider if you\'re not able to update PHP by yourself.', 'wolf-artists' ),
-					'%NAME%',
+					'Artists',
 					$this->required_php_version,
 					phpversion()
 				);
@@ -168,7 +165,6 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 				'WAT_SLUG' => plugin_basename( dirname( __FILE__ ) ),
 				'WAT_PATH' => plugin_basename( __FILE__ ),
 				'WAT_VERSION' => $this->version,
-				'WAT_UPDATE_URL' => $this->update_url,
 				'WAT_SUPPORT_URL' => $this->support_url,
 				'WAT_DOC_URI' => 'https://docs.wolfthemes.com/documentation/plugins/' . plugin_basename( dirname( __FILE__ ) ),
 				'WAT_WOLF_DOMAIN' => 'wolfthemes.com',
@@ -230,7 +226,7 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 		}
 
 		/**
-		 * Function used to Init %NAME% Template Functions - This makes them pluggable by plugins and themes.
+		 * Function used to Init Artists Template Functions - This makes them pluggable by plugins and themes.
 		 */
 		public function include_template_functions() {
 			include_once( 'inc/frontend/wat-template-functions.php' );
@@ -254,7 +250,7 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 		}
 
 		/**
-		 * Init %NAME% when WordPress Initialises.
+		 * Init Artists when WordPress Initialises.
 		 */
 		public function init() {
 			// Before init action

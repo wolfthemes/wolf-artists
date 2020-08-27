@@ -1,11 +1,11 @@
 <?php
 /**
- * %NAME% register post type
+ * Artists register post type
  *
  * @author WolfThemes
  * @category Core
  * @package WolfArtists/Admin
- * @version %VERSION%
+ * @version 1.0.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

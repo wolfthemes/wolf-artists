@@ -1,13 +1,13 @@
 <?php
 /**
- * %NAME% core functions
+ * Artists core functions
  *
  * General core functions available on admin and frontend
  *
  * @author WolfThemes
  * @category Core
  * @package WolfArtists/Core
- * @version %VERSION%
+ * @version 1.0.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

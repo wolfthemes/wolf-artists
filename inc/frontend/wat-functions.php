@@ -1,8 +1,8 @@
 <?php
 /**
- * %NAME% Functions
+ * Artists Functions
  *
- * Hooked-in functions for %NAME% related events on the front-end.
+ * Hooked-in functions for Artists related events on the front-end.
  *
  * @author WolfThemes
  * @category Core

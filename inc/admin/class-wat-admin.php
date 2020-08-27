@@ -1,12 +1,12 @@
 <?php
 /**
- * %NAME% Admin.
+ * Artists Admin.
  *
  * @class WAT_Admin
  * @author WolfThemes
  * @category Admin
  * @package WolfArtists/Admin
- * @version %VERSION%
+ * @version 1.0.1
  */
 
 defined( 'ABSPATH' ) || exit;

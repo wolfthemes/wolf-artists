@@ -1,12 +1,12 @@
 <?php
 /**
- * %NAME% Shortcode.
+ * Artists Shortcode.
  *
  * @class WAT_Shortcode
  * @author WolfThemes
  * @category Core
  * @package WolfArtists/Shortcode
- * @version %VERSION%
+ * @version 1.0.1
  * @since 1.2.6
  */
 

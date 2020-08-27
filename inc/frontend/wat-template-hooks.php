@@ -1,8 +1,8 @@
 <?php
 /**
- * %PACKAGENAME% Hooks
+ * WolfArtists Hooks
  *
- * Action/filter hooks used for %PACKAGENAME% functions/templates
+ * Action/filter hooks used for WolfArtists functions/templates
  *
  * @author WolfThemes
  * @category Core
