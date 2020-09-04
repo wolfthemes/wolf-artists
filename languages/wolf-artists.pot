@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Artists 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wolf-artists\n"
-"POT-Creation-Date: 2020-08-27 12:49:05+00:00\n"
+"POT-Creation-Date: 2020-09-02 12:46:50+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,14 +69,15 @@ msgid ""
 msgstr ""
 
 #: inc/admin/class-wat-admin.php:124
+#: pack/wolf-artists/inc/admin/class-wat-admin.php:124
 msgid ""
-"<br><br>\n"
+"<br><br>\r\n"
 "\t\t\t\t\t<a href=\"%1$s\" class=\"button button-primary\">Create a "
-"page</a>\n"
-"\t\t\t\t\t&nbsp;\n"
+"page</a>\r\n"
+"\t\t\t\t\t&nbsp;\r\n"
 "\t\t\t\t\t<a href=\"%2$s\" class=\"button button-primary\">Select an "
-"existing page</a>\n"
-"\t\t\t\t\t&nbsp;\n"
+"existing page</a>\r\n"
+"\t\t\t\t\t&nbsp;\r\n"
 "\t\t\t\t\t<a href=\"%3$s\" class=\"button\">Skip setup</a>"
 msgstr ""
 
@@ -317,18 +318,6 @@ msgstr ""
 #: inc/wat-register-taxonomy.php:30
 #: pack/wolf-artists/inc/wat-register-taxonomy.php:30
 msgid "No genres found"
-msgstr ""
-
-#: pack/wolf-artists/inc/admin/class-wat-admin.php:124
-msgid ""
-"<br><br>\r\n"
-"\t\t\t\t\t<a href=\"%1$s\" class=\"button button-primary\">Create a "
-"page</a>\r\n"
-"\t\t\t\t\t&nbsp;\r\n"
-"\t\t\t\t\t<a href=\"%2$s\" class=\"button button-primary\">Select an "
-"existing page</a>\r\n"
-"\t\t\t\t\t&nbsp;\r\n"
-"\t\t\t\t\t<a href=\"%3$s\" class=\"button\">Skip setup</a>"
 msgstr ""
 
 #: pack/wolf-artists/wolf-artists.php:113 wolf-artists.php:110
