@@ -1,5 +1,10 @@
 # Changelog
 
+#### 30th November 2024 - Version 1.0.3
+
+-   Fix: Typo (uppercase)  Artists options amdin page
+-   Improvement: Added synchronization feature with Portoflio artist taxonomy
+
 #### 26th August 2020 - Version 1.0.1
 
 -   Tweak: Unbrand plugin name

@@ -19,12 +19,12 @@ defined( 'ABSPATH' ) || exit;
  * @param object $post
  * @return array $states
  */
-function wat_custom_post_states( $states, $post ) { 
+function wat_custom_post_states( $states, $post ) {
 
 	if ( 'page' == get_post_type( $post->ID ) && absint( $post->ID ) === wolf_artists_get_page_id() ) {
 
 		$states[] = esc_html__( 'Artists Page' );
-	} 
+	}
 
 	return $states;
 }
@@ -47,8 +47,12 @@ function wat_get_artist_sync_terms() {
 		$taxonomies[] = 'we_artist';
 	}
 
+	if ( class_exists( 'Wolf_Portfolio' ) && get_theme_mod( 'work_terms_artist_sync' ) ) {
+		$taxonomies[] = 'work_artist';
+	}
+
 	if ( class_exists( 'Wolf_Videos' ) && get_theme_mod( 'videos_terms_artist_sync' ) ) {
-		$taxonomies[] = 'video_type';
+		$taxonomies[] = apply_filters( 'wolf_artists_video_artist_slug', 'video_type' );
 	}
 
 	if ( class_exists( 'Wolf_Albums' ) && get_theme_mod( 'albums_terms_artist_sync' ) ) {
@@ -82,7 +86,7 @@ function wat_sync_artist_terms_name( $post_id, $post ) {
 		$term_slug = sanitize_title_with_dashes( $artist_name );
 
 		foreach ( wat_get_artist_sync_terms() as $taxonomy ) {
-			
+
 			$tax_meta_id = '_' . $taxonomy . '_term_id';
 			$term_id = absint( get_post_meta( $post_id, $tax_meta_id, true ) );
 
@@ -93,7 +97,7 @@ function wat_sync_artist_terms_name( $post_id, $post ) {
 					'term_id' => $term_id,
 					'name' => $artist_name,
 				) );
-			
+
 			/* else create term */
 			} else {
 
@@ -126,9 +130,9 @@ add_action( 'save_post', 'wat_sync_artist_terms_name', 10, 2 );
 function wat_sync_artist_terms_slug( $slug, $post_id, $post_status, $post_type ) {
 
 	if ( 'artist' === $post_type ) {
-		
+
 		foreach ( wat_get_artist_sync_terms() as $taxonomy ) {
-			
+
 			$tax_meta_id = '_' . $taxonomy . '_term_id';
 			$term_id = absint( get_post_meta( $post_id, $tax_meta_id, true ) );
 
@@ -156,7 +160,7 @@ function wat_delete_artist_terms( $post_id ) {
 	if ( 'artist' === get_post_type() ) {
 
 		foreach ( wat_get_artist_sync_terms() as $taxonomy ) {
-			
+
 			$tax_meta_id = '_' . $taxonomy . '_term_id';
 			$term_id = absint( get_post_meta( $post_id, $tax_meta_id, true ) );
 

@@ -1,14 +1,14 @@
-# Copyright (C) 2020 WolfThemes
+# Copyright (C) 2024 WolfThemes
 # This file is distributed under the same license as the Artists package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Artists 1.0.1\n"
+"Project-Id-Version: Artists 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wolf-artists\n"
-"POT-Creation-Date: 2020-09-02 12:46:50+00:00\n"
+"POT-Creation-Date: 2024-12-30 07:37:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -164,8 +164,7 @@ msgid "Additionally, you can add a count, columns, tag and category attributes."
 msgstr ""
 
 #: inc/admin/class-wat-options.php:175
-#: pack/wolf-artists/inc/admin/class-wat-options.php:175
-msgid "artists options"
+msgid "Artists options"
 msgstr ""
 
 #: inc/admin/class-wat-options.php:178
@@ -178,13 +177,13 @@ msgstr ""
 msgid "Save Changes"
 msgstr ""
 
-#: inc/admin/updater.php:434
+#: inc/admin/updater.php:434 pack/wolf-artists/inc/admin/updater.php:434
 msgid ""
 "The plugin has been updated, but could not be reactivated. Please "
 "reactivate it manually."
 msgstr ""
 
-#: inc/admin/updater.php:435
+#: inc/admin/updater.php:435 pack/wolf-artists/inc/admin/updater.php:435
 msgid "Plugin reactivated successfully."
 msgstr ""
 
@@ -193,8 +192,8 @@ msgstr ""
 msgid "Artists Page"
 msgstr ""
 
-#: inc/admin/wat-admin-functions.php:81 inc/wat-register-post-type.php:22
-#: pack/wolf-artists/inc/admin/wat-admin-functions.php:81
+#: inc/admin/wat-admin-functions.php:85 inc/wat-register-post-type.php:22
+#: pack/wolf-artists/inc/admin/wat-admin-functions.php:85
 #: pack/wolf-artists/inc/wat-register-post-type.php:22
 msgid "New Artist"
 msgstr ""
@@ -320,7 +319,11 @@ msgstr ""
 msgid "No genres found"
 msgstr ""
 
-#: pack/wolf-artists/wolf-artists.php:113 wolf-artists.php:110
+#: pack/wolf-artists/inc/admin/class-wat-options.php:175
+msgid "artists options"
+msgstr ""
+
+#: pack/wolf-artists/wolf-artists.php:110 wolf-artists.php:110
 msgid ""
 "%1$s needs at least PHP %2$s installed on your server. You have version "
 "%3$s currently installed. Please contact your hosting service provider if "

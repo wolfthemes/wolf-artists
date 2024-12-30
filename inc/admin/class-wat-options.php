@@ -101,7 +101,7 @@ class WAT_Options {
 	 *
 	 */
 	public function setting_page_id() {
-		
+
 		$page_option = array( '' => esc_html__( '- Disabled -', 'wolf-artists' ) );
 		$pages = get_pages();
 
@@ -172,7 +172,7 @@ class WAT_Options {
 		?>
 		<div class="wrap">
 			<div id="icon-options-general" class="icon32"></div>
-			<h2><?php esc_html_e( 'artists options', 'wolf-artists' ); ?></h2>
+			<h2><?php esc_html_e( 'Artists options', 'wolf-artists' ); ?></h2>
 			<?php if ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] ) { ?>
 			<div id="setting-error-settings_updated" class="updated settings-error">
 				<p><strong><?php esc_html_e( 'Settings saved.', 'wolf-artists' ); ?></strong></p>
