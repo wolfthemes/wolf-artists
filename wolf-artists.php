@@ -53,8 +53,6 @@ if ( ! class_exists( 'Wolf_Artists' ) ) {
 		 */
 		protected static $_instance = null;
 
-
-
 		/**
 		 * @var the support forum URL
 		 */
