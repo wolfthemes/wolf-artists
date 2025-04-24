@@ -1,5 +1,9 @@
 # Changelog
 
+#### 24th April 2025 - Version 1.0.4
+
+-   Fix: Prevent loading_plugin_text notice message
+
 #### 30th November 2024 - Version 1.0.3
 
 -   Fix: Typo (uppercase)  Artists options amdin page
